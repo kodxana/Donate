@@ -5,21 +5,18 @@
 </head>
 
 <body>
-<style type="text/css"> .btcpay-form { display: inline-flex; align-items: center; justify-content: center; } .btcpay-form--inline { flex-direction: row; } .btcpay-form--block { flex-direction: column; } .btcpay-form--inline .submit { margin-left: 15px; } .btcpay-form--block select { margin-bottom: 10px; } .btcpay-form .btcpay-custom { display: flex; align-items: center; justify-content: center; } .btcpay-form .plus-minus { cursor:pointer; font-size:25px; line-height: 25px; background: #DFE0E1; height: 30px; width: 45px; border:none; border-radius: 60px; margin: auto 5px; display: inline-flex; justify-content: center; } .btcpay-form select { -moz-appearance: none; -webkit-appearance: none; appearance: none; color: currentColor; background: transparent; border:1px solid transparent; display: block; padding: 1px; margin-left: auto; margin-right: auto; font-size: 11px; cursor: pointer; } .btcpay-form select:hover { border-color: #ccc; } #btcpay-input-price { -moz-appearance: none; -webkit-appearance: none; border: none; box-shadow: none; text-align: center; font-size: 25px; margin: auto; border-radius: 5px; line-height: 35px; background: #fff; } </style>
-<form method="POST" action="http://madiator2011.duckdns.org/api/v1/invoices" class="btcpay-form btcpay-form--inline">
-  <input type="hidden" name="storeId" value="9zsSvZLHMPdsGJq8uVPAS9DfKkfC4SBpnPwURh6jEdHh" />
-  <div>
-    <div class="btcpay-custom">
-      <input id="btcpay-input-price" name="price" type="number" min="1" max="50" step="1" value="10" style="width: 3em;" oninput="event.preventDefault();isNaN(event.target.value) || event.target.value <= 0 ? document.querySelector('#btcpay-input-price').value = 10 : event.target.value"  />
-    </div>
-    <select name="currency">
-      <option value="USD" selected>USD</option>
-      <option value="GBP">GBP</option>
-      <option value="EUR">EUR</option>
-      <option value="BTC">BTC</option>
-    </select>
-  </div>
-  <input type="image" class="submit" name="submit" src="https://mainnet.demo.btcpayserver.org/img/paybutton/pay.svg" style="width:209px" alt="Pay with BtcPay, Self-Hosted Bitcoin Payment Processor">
-</form>
+<h1 data-darkreader-inline-color="">Donate to Madiator2011</h1>
+<p>Fell free to donate me by using Bitcoin Lightning network</p>
+<form action="http://madiator2011.duckdns.org/api/v1/invoices" method="POST"><input name="storeId" type="hidden" value="9zsSvZLHMPdsGJq8uVPAS9DfKkfC4SBpnPwURh6jEdHh" />
+<div>
+<div><input max="50" min="1" name="price" step="1" type="number" value="10" /></div>
+<select name="currency">
+<option selected="selected" value="USD">USD</option>
+<option value="GBP">GBP</option>
+<option value="EUR">EUR</option>
+<option value="BTC">BTC</option>
+</select></div>
+<input alt="Pay with BtcPay, Self-Hosted Bitcoin Payment Processor" name="submit" src="https://mainnet.demo.btcpayserver.org/img/paybutton/pay.svg" type="image" /></form>
+<p><strong>Thank dor all donations :)</strong><strong><br /></strong></p>
 </body>
 </html>
